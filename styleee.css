@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  height: 300px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+
+body {
+  font-family: sans-serif;
+  color: black;
+  margin: 0;
+}
+
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+.container {
+  text-align: center;
+}
+
+.life,
+.after,
+.work {
+  box-sizing: border-box;
+  width: auto;
+  padding: 40;
+}
+
+p {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color:#a2a4dd;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid #333;
+  font-weight: 600;
+}
+
+.navbar a {
+  color: #333;
+  padding: 30px;
+  margin-top: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #e3d7ea;
+  color: #fff;
+}
+
+
+.main-container {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.grid-container {
+  height: 30%;
+  width: 30%;
+  margin: 10px 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex: 0 1;
+  justify-content: stretch;
+  align-content: space-around;
+}
+
+@media (max-width: 700px) {
+  .main-container {
+    padding: 8px;
+  }
+  .grid-container {
+    flex: 0 1;
+  }
+}
+
+img {
+  width: 350px; 
+  max-height: 350px;
+  margin: auto;
+}
+
+.footer {
+  height: 60;
+  margin-top: 50px;
+  text-align: center;
+  background: #333;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar,
+  .container,
+  .wrapper,
+  body {
+    flex-direction: column;
+    background-color: pink;
+  }
+}
